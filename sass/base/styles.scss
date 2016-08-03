@@ -116,7 +116,7 @@ body{
                 padding: 0px;
             }
             a{
-                @include botones-simples (100%, $darken-green, 0px, 10px, 30px,1px solid #145D1E, 10px);
+                @include botones-simples (100%, $darken-green, 0px, 5px, 25px,1px solid #145D1E, 10px);
             }
             a:focus{
                  background: -webkit-linear-gradient(top, $darken-green, $teal);
