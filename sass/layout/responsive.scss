@@ -31,22 +31,24 @@
 		} 
 	}
 	#contact{
-		#contact{
-			.facebook{
-				max-width: 70% ;
-			}
-			.twitter{
-				max-width: 50%;
-			}
-			.github{
-				max-width: 50%;
-			}
-			.gitlab{
-				max-width: 50%;
-			}
-			.gmail{
-				max-width: 50%;
-			}
+		.facebook{
+			max-width: 70% ;
+		}
+		.twitter{
+			max-width: 50%;
+		}
+		.github{
+			max-width: 50%;
+		}
+		.gitlab{
+			max-width: 50%;
+		}
+		.gmail{
+			max-width: 50%;
+		}
+		.cuadrado{
+			max-width: 50%;
+			margin: 30px 0px 30px 10%;
 		}
 	}
 	footer{
@@ -100,6 +102,9 @@
 			max-width: 50%;
 		}
 		.gmail{
+			max-width: 50%;
+		}
+		.cuadrado{
 			max-width: 50%;
 		}
 	}
