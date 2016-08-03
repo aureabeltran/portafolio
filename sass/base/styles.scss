@@ -111,11 +111,15 @@ body{
     padding: 5% 0;
     .nav-tabs{
         li{
+            text-align: center;
+            &.col-sm-3, .col-md-3{
+                padding: 0px;
+            }
             a{
-                @include botones-simples (100%, $main-green, 0px, 10px, 25px,1px solid #145D1E, 0px);
+                @include botones-simples (100%, $darken-green, 0px, 10px, 30px,1px solid #145D1E, 10px);
             }
             a:focus{
-                 background: -webkit-linear-gradient(top, $main-green, $teal);
+                 background: -webkit-linear-gradient(top, $darken-green, $teal);
             }
         }
     }
@@ -176,7 +180,7 @@ body{
                     background-size: cover;
                 }
             }
-            .caja{
+            .square{
                 display:inline-block;
                 text-align: center;
                 padding: 10px;
@@ -222,11 +226,11 @@ body{
                 height: 150px;
                 width: 400px;
                 color: white;
-                padding: 10px;
+                padding: 20px;
                 transition: all 0.5s ease-in;
-                -webkit-box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.75);
-                box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.55);
+                -moz-box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.55);
+                box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.55);
                 h3{
                     font-family: Amatic SC;
                     font-size: 30px;
@@ -258,28 +262,28 @@ body{
                 background-color: $main-green;
             }
             #note{
-                -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
+                -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
                 box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
                  background-color: $facebook;
             }
             #batery{
                  background-color: $yellow;
-                 -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
-                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
+                 -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
             }
             #tenedor{
                  background-color: $main-green;
-                 -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
-                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
+                 -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
             }
             #compu{
                  background-color: $orange;
-                 -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
-                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
-                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
+                 -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
             }
         }
         #ability{
@@ -338,7 +342,7 @@ body{
             a{
                 .caja{
                     height: 140px;
-                    width: 140px;
+                    max-width: 100%;
                     text-align: center;
                     padding: 20px 10px;
                     -webkit-border-radius: 50%; 
@@ -413,6 +417,6 @@ footer{
     }
     img{
         height: 70px;
-        width: 70px;
+        width: 60%;
     }
 }
