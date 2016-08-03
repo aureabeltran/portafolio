@@ -1,8 +1,11 @@
-@media (min-width: 448px) { 
+@media (min-width: 414px) { 
 	.fondo-1{
 		background-size: 100% 100%;
 		width: 100%;
 		height: 300px;
+		&::before{
+			background-color: rgba(0, 0, 0, 0.57);
+		}
 	}
 	#content{
 		.nav-tabs{
@@ -10,6 +13,7 @@
 				float: center;
 				a {
 					max-width: 100%;
+					padding: 5px  !important;
 				}
 			}
 		}
@@ -24,15 +28,48 @@
 				}
 			}
 		} 
+	}
+	#contact{
+		#contact{
+			.facebook{
+				max-width: 70% ;
+			}
+			.twitter{
+				max-width: 50%;
+			}
+			.github{
+				max-width: 50%;
+			}
+			.gitlab{
+				max-width: 50%;
+			}
+			.gmail{
+				max-width: 50%;
+			}
+		}
+	}
+	footer{
+		img{
+			display:none;
+		}
 	}	
 }
 @media (min-width: 384px) {
+	.fondo-1{
+		background-size: 100% 100%;
+		width: 100%;
+		height: 300px;
+		&::before{
+			background-color: rgba(0, 0, 0, 0.57);
+		}
+	}
 	#content{
 		.nav-tabs{
 			li{ 
 				float: center;
 				a {
 					max-width: 100%;
+					padding: 5px !important;
 				}
 			}
 		}
@@ -47,5 +84,27 @@
 				}
 			}
 		} 
-	}		
+	}
+	#contact{
+		.facebook{
+			max-width: 70%;
+		}
+		.twitter{
+			max-width: 50% ;
+		}
+		.github{
+			max-width: 50%;
+		}
+		.gitlab{
+			max-width: 50%;
+		}
+		.gmail{
+			max-width: 50%;
+		}
+	}
+	footer{
+		img{
+			display:none
+		}
+	}	
 }
