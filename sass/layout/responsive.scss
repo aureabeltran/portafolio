@@ -1,4 +1,4 @@
-@media (min-width: 414px) { 
+@media (min-width: 414px) and (max-width: 500px) { 
 	.fondo-1{
 		background-size: 100% 100%;
 		width: 100%;
@@ -31,21 +31,6 @@
 		} 
 	}
 	#contact{
-		.facebook{
-			max-width: 70% ;
-		}
-		.twitter{
-			max-width: 50%;
-		}
-		.github{
-			max-width: 50%;
-		}
-		.gitlab{
-			max-width: 50%;
-		}
-		.gmail{
-			max-width: 50%;
-		}
 		.cuadrado{
 			max-width: 50%;
 			margin: 30px 0px 30px 10%;
@@ -89,21 +74,6 @@
 		} 
 	}
 	#contact{
-		.facebook{
-			max-width: 70%;
-		}
-		.twitter{
-			max-width: 50% ;
-		}
-		.github{
-			max-width: 50%;
-		}
-		.gitlab{
-			max-width: 50%;
-		}
-		.gmail{
-			max-width: 50%;
-		}
 		.cuadrado{
 			max-width: 50%;
 		}
