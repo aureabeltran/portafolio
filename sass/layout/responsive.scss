@@ -1,4 +1,4 @@
-@media (min-width: 414px) and (max-width: 500px) { 
+@media (min-width: 412px) and (max-width: 500px) { 
 	.fondo-1{
 		background-size: 100% 100%;
 		width: 100%;
@@ -6,6 +6,11 @@
 		&::before{
 			background-color: rgba(0, 0, 0, 0.57);
 		}
+		 a{
+	        .icon-div{
+	            margin-left: 35% !important;
+	        }
+	    }
 	}
 	#content{
 		.nav-tabs{

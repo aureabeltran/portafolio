@@ -297,7 +297,9 @@
               font-family: quicksand; }
 
 body {
-  background-image: url("../images/bg-hojas.jpg"); }
+  background-image: url("../images/bg-hojas.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 #contenedor-redes ul {
   padding: 10px;
@@ -366,13 +368,15 @@ img {
   font-family: Amatic SC;
   font-weight: bold; }
 
-@media (min-width: 414px) and (max-width: 500px) {
+@media (min-width: 412px) and (max-width: 500px) {
   .fondo-1 {
     background-size: 100% 100%;
     width: 100%;
     height: 300px; }
     .fondo-1::before {
       background-color: rgba(0, 0, 0, 0.57); }
+    .fondo-1 a .icon-div {
+      margin-left: 35% !important; }
 
   #content .nav-tabs li {
     float: center; }
