@@ -1,0 +1,16 @@
+footer{
+    text-align: center;
+    background-color: darken($darken-green,10%);
+    padding: 2% 0;
+    color: white;
+    h3{
+        font-family: quicksand;
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px;
+    }
+    img{
+        height: 70px;
+        width: 60%;
+    }
+}

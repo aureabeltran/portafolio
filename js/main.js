@@ -32,3 +32,7 @@ $("#pc").on("click", function(){
 	var compu = $("#compu");
 	compu.toggleClass("_hide");
 })
+$("#bici").on("click", function(){
+	var compu = $("#cleta");
+	compu.toggleClass("_hide");
+})

@@ -1,4 +1,72 @@
+body{
+    background-image: url('../images/bg-hojas.jpg');
+}
+//estos son los iconos
+#contenedor-redes{
+    ul{
+        padding: 10px;
+        top: 25%;
+        list-style: none;
+        position: fixed;
+        z-index: 2000;
+        left: 0%;
+        li{
+            padding: 5px;
+            .box{
+                background-color: $facebook;
+                height: 50px;
+                width: 50px;
+                color: white;
+                font-size: 30px;
+                padding: 6px;
+                -webkit-border-radius: 25px; 
+                -moz-border-radius: 25px;
+                border-radius: 25px; 
+                -webkit-transition: width 1s; /* Safari */
+                transition: width 1s;
+                transition-timing-function: ease-in-out;
+                h6{
 
+                    font-family: quicksand;
+                    font-size: 0px;
+                    transition-timing-function: ease-in-out;
+                    -webkit-transition: 1s; /* Safari */
+                    transition: 1s;
+                    opacity: 0.1;
+                    display: inline-block
+                }
+                &:hover{
+                    width: 190px;
+                    transition-timing-function: ease-in-out;
+                    -webkit-transition: 1s; /* Safari */
+                    transition: 1s;
+                    i{
+                        h6{
+                            font-size: 25px;
+                            opacity: 1;
+                            margin: 0px 15px;
+                            transition: 1s;
+                            -webkit-transition: 1s;
+                        }
+                    }
+                }
+            }
+            .facebook{
+                background-color: $facebook;
+                padding: 5px 0px 5px 10px;
+            }
+            .twitter{
+                background-color: $twitter;
+            }
+            .github{
+                background-color: $github;
+            }
+            .gitlab{
+                background-color: $gitlab;
+            }
+        }
+    }
+}
 ul{
 	list-style: none;
 }

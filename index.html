@@ -9,9 +9,10 @@
 	   <link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<section class="fondo fondo-fixed fondo-1">
+		<section class="fondo fondo-fixed fondo-1 menu">
 			<h1>Aurea Beltran</h1>
 			<h2>Front-End Developer</h2>
+			<a href="#content"><div class="icon-div"><i class="fa fa-arrow-down" aria-hidden="true"></i></div></a>
 		</section>
 		<section id="contenedor-redes" class="hidden-sm hidden-xs">
 			<nav id="sidebar">
@@ -36,10 +37,7 @@
 						</ul>
 						<div id="content-panel" class="panel panel-default">
 							<div class="panel-body">
-
-								  <!-- Pestañas -->
-
-								  <!-- Contendor de los contenidos de los pestañas -->
+								  <!-- Contendor de las pestañas -->
 								<div id="content-pages-container" class="tab-content">
 
 								  	<!-- Acerca de -->
@@ -51,7 +49,7 @@
 								    		</div>
 								    		<div class="col-md-9 col-sm-12">
 								    			<h2>Un poco sobre mi</h2>
-								    			<p>Mi Nombre es Aurea Beltran Manzo, tengo 23 años y soy desarrolladora Front End de la seguna generacion de Laboratoria Chile.Soy una joven autodidácta y creo firmemente en que ...<strong>"El Cambio lo hace Uno"</strong></p>
+								    			<p>Mi Nombre es Aurea Beltran Manzo, tengo 23 años y soy desarrolladora Front End de la seguna generacion de Laboratoria Chile. Soy una joven autodidácta y creo firmemente en que <strong>"El Cambio lo hace Uno"</strong></p>
 								    			<h4>Presiona sobre la imagen para conocer algo mas de mi.</h4>
 								    			<div id="pencil" class="caja-r square"><i class="fa fa-pencil" aria-hidden="true"></i></div>
 										    	<div id="joy" class="caja-b square"><i class="fa fa-gamepad" aria-hidden="true"></i></div>
@@ -60,9 +58,8 @@
 										    	<div id="book" class=" caja-b square"><i class="fa fa-book" aria-hidden="true"></i></div>
 										    	<div id="bateria" class=" caja-y square"><i class="fa fa-battery-half" aria-hidden="true"></i></div>
 										    	<div id="servicio" class="caja-g square"><i class="fa fa-cutlery" aria-hidden="true"></i></div>
-										    	<div id="pc" class=" caja-r square"><i class="fa fa-desktop" aria-hidden="true"></i>
-												</div>
-								    		</div>
+										    	<div id="pc" class=" caja-r square"><i class="fa fa-desktop" aria-hidden="true"></i></div>
+											</div>
 								    	</div>
 								    	<div  id="draw" class="contenedor _hide">
 								    		<h3>Mi hobbie siempre ha sido Dibujar</h3>
@@ -264,10 +261,7 @@
 		<footer>
 			<div class="container">
 				<div class="row">
-					<div class="col-md-2 col-sm-2">
-						<img class="img-rounded hidden-sm hidden-xs" src="images/logo.png" alt="">
-					</div>
-					<div class="col-md-8 col-sm-8">
+					<div class=" col-md-offset-2 col-md-8 col-sm-8">
 						<h3>Project Web design by: Aurea Beltran Manzo (Bittersweet)</h3>
 					</div>
 					<div class="col-md-2 col-sm-2">
@@ -279,5 +273,12 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.2/validator.min.js"></script>
+		<script src="js/smoothscrolling/smoothscrolling.jquery.js"></script>
+		<script>
+		  $(function() {
+		    $(".menu a").smoothscrolling();
+		  })
+		</script>
 	</body>
 </html>

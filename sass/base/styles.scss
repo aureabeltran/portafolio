@@ -1,111 +1,4 @@
-body{
-    background-image: url('../images/bg-hojas.jpg');
-}
-.fondo{
-  background-size: cover;
-}
-.fondo-fixed{
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-}
-.fondo-1 {
-    margin-top: -20px;
-    position: relative;
-    background-size: cover;
-    padding: 0%;
-    background-image: url(../images/code-blue.gif);
-    height: 300px;
-    text-align: center;
-    &::before{
-        top: 0%;
-        background-color: rgba(0, 0, 0, 0.77);
-        width: 100%;
-        height: 300px;
-        content: '';
-        display: block;
-        position: absolute;
-    }
-    h1{
-        padding: 10px;
-        color: white;
-        opacity: 0.9;
-        font-size: 60px;
-        font-weight: bold;
-    }
-    h2{
-        padding: 10px;
-        color: white;
-        opacity: 0.9;
-        font-size: 50px;
-        font-weight: bold;
-    }
-}
-//esto es del banner
-#contenedor-redes{
-    ul{
-        padding: 10px;
-        top: 25%;
-        list-style: none;
-        position: fixed;
-        z-index: 2000;
-        left: 0%;
-        li{
-            padding: 5px;
-            .box{
-                background-color: $facebook;
-                height: 50px;
-                width: 50px;
-                color: white;
-                font-size: 30px;
-                padding: 6px;
-                -webkit-border-radius: 25px; 
-                -moz-border-radius: 25px;
-                border-radius: 25px; 
-                -webkit-transition: width 1s; /* Safari */
-                transition: width 1s;
-                transition-timing-function: ease-in-out;
-                h6{
 
-                    font-family: quicksand;
-                    font-size: 0px;
-                    transition-timing-function: ease-in-out;
-                    -webkit-transition: 1s; /* Safari */
-                    transition: 1s;
-                    opacity: 0.1;
-                    display: inline-block
-                }
-                &:hover{
-                    width: 190px;
-                    transition-timing-function: ease-in-out;
-                    -webkit-transition: 1s; /* Safari */
-                    transition: 1s;
-                    i{
-                        h6{
-                            font-size: 25px;
-                            opacity: 1;
-                            margin: 0px 15px;
-                            transition: 1s;
-                            -webkit-transition: 1s;
-                        }
-                    }
-                }
-            }
-            .facebook{
-                background-color: $facebook;
-                padding: 5px 0px 5px 10px;
-            }
-            .twitter{
-                background-color: $twitter;
-            }
-            .github{
-                background-color: $github;
-            }
-            .gitlab{
-                background-color: $gitlab;
-            }
-        }
-    }
-}
 //los tabs
 #content{
     padding: 5% 0;
@@ -123,235 +16,343 @@ body{
             }
         }
     }
-    .tab-content{
-        padding: 10px;
-        .tab-pane{
-            p{
-                font-family: Quicksand;
-                font-size: 18px;
-            }
-            ul{
-                li{
+    .panel-body{
+        padding: 20px;
+        max-height: 600px;
+        overflow: scroll;
+        .tab-content{
+            padding: 10px;
+            .tab-pane{
+                p{
                     font-family: Quicksand;
                     font-size: 18px;
                 }
-            }
-            #galleries-pages{
-                li{
-                    a{
-                        font-size: 18px;
+                ul{
+                    li{
                         font-family: Quicksand;
+                        font-size: 18px;
+                    }
+                }
+                #galleries-pages{
+                    li{
+                        a{
+                            font-size: 18px;
+                            font-family: Quicksand;
+                        }
                     }
                 }
             }
-        }
-        #about{
-            position: relative;
-            h2{
-                font-weight: bold;
-                margin-bottom: 10px;
-            }
-            h4{
-                font-family: Quicksand;
-                font-size: 20px;
-            }
-            p{
-                font-family: Quicksand;
-                strong{
-                    font-family:Quicksand;
-                    font-style: italic;
+            #about{
+                position: relative;
+                h2{
+                    font-weight: bold;
+                    margin-bottom: 10px;
                 }
-            }
-            .img-hover{
-                height: 200px;
-                width: 200px;
-                background-image: url(../images/chavela.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                 transition-timing-function: ease-in-out;
-                transition: 1s;
-                -webkit-transition: 1s;
-                &:hover{
-                     transition-timing-function: ease-in-out;
-                    -webkit-transition: 1s;
-                    transition: 1s;
-                    background-image: url(../images/caricatura.jpg);
+                h4{
+                    font-family: Quicksand;
+                    font-size: 20px;
+                }
+                p{
+                    font-family: Quicksand;
+                    strong{
+                        font-family:Quicksand;
+                        font-style: italic;
+                    }
+                }
+                .img-hover{
+                    height: 200px;
+                    width: 200px;
+                    background-image: url(../images/chavela.jpg);
                     background-repeat: no-repeat;
                     background-size: cover;
+                     transition-timing-function: ease-in-out;
+                    transition: 1s;
+                    -webkit-transition: 1s;
+                    &:hover{
+                         transition-timing-function: ease-in-out;
+                        -webkit-transition: 1s;
+                        transition: 1s;
+                        background-image: url(../images/caricatura.jpg);
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                    }
                 }
-            }
-            .square{
-                display:inline-block;
-                text-align: center;
-                padding: 10px;
-                height:70px;
-                width: 70px;
-                border: 1px solid #474747;
-                margin: 2px;
-                i{
-                    font-size: 30px;
+                .square{
+                    display:inline-block;
+                    text-align: center;
+                    padding: 10px;
+                    height:70px;
+                    width: 70px;
+                    border: 1px solid #474747;
+                    margin: 2px;
+                    i{
+                        font-size: 30px;
+                        color: white;
+                    }
+                }
+                .caja-r{
+                    background-color: $orange;
+                    &:hover{
+                        background-color: darken($orange, 15%);
+                    }
+                }
+                .caja-b{
+                    background-color: $facebook;
+                    &:hover{
+                        background-color: darken($facebook, 15%);
+                    }
+                }
+                .caja-y{
+                    background-color: $yellow;
+                    &:hover{
+                        background-color: darken($yellow, 15%);
+                    }
+                }
+                .caja-g{
+                    background-color: $main-green;
+                    &:hover{
+                        background-color: darken($main-green, 15%);
+                    }
+                }
+                .contenedor{
+                    border: 1px solid black;
+                    text-align: center;
+                    top: 0%;
+                    left: 30%;
+                    position: absolute;
+                    height: 150px;
+                    max-width: 400px !important;
                     color: white;
-                }
-            }
-            .caja-r{
-                background-color: $orange;
-                &:hover{
-                    background-color: darken($orange, 15%);
-                }
-            }
-            .caja-b{
-                background-color: $facebook;
-                &:hover{
-                    background-color: darken($facebook, 15%);
-                }
-            }
-            .caja-y{
-                background-color: $yellow;
-                &:hover{
-                    background-color: darken($yellow, 15%);
-                }
-            }
-            .caja-g{
-                background-color: $main-green;
-                &:hover{
-                    background-color: darken($main-green, 15%);
-                }
-            }
-            .contenedor{
-                border: 1px solid black;
-                text-align: center;
-                top: 0%;
-                left: 30%;
-                position: absolute;
-                height: 150px;
-                max-width: 400px !important;
-                color: white;
-                padding: 20px;
-                transition: all 0.5s ease-in;
-                -webkit-box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.55);
-                -moz-box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.55);
-                box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.55);
-                h3{
-                    font-family: Amatic SC;
-                    font-size: 30px;
-                    font-weight: bold;
+                    padding: 20px;
                     transition: all 0.5s ease-in;
-                }
-                &._hide{
-                    height: 50px;
-                    width: 100px;
-                    opacity: 0;
-                    transition: all 0.5s ease-in; 
+                    -webkit-box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.55);
+                    -moz-box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.55);
+                    box-shadow: -23px 17px 28px 0px rgba(0,0,0,0.55);
                     h3{
+                        font-family: Amatic SC;
+                        font-size: 30px;
+                        font-weight: bold;
                         transition: all 0.5s ease-in;
-                        font-size: 0px;
+                    }
+                    &._hide{
+                        height: 50px;
+                        width: 100px;
                         opacity: 0;
+                        transition: all 0.5s ease-in; 
+                        h3{
+                            transition: all 0.5s ease-in;
+                            font-size: 0px;
+                            opacity: 0;
+                        }
+                    }
+                }
+                #draw{
+                    background-color: $orange;
+                }
+                #gamepad{
+                    background-color: $facebook;
+                }
+                #face{
+                    background-color: $yellow;
+                }
+                #people{
+                    background-color: $main-green;
+                }
+                #note{
+                    -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                    -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                    box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
+                     background-color: $facebook;
+                }
+                #batery{
+                     background-color: $yellow;
+                     -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                    -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                    box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                }
+                #tenedor{
+                     background-color: $main-green;
+                     -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                    -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                    box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                }
+                #compu{
+                     background-color: $orange;
+                     -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                    -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                    box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
+                }
+            }
+            #ability{
+                text-align: center;
+                .caja{
+                    padding: 10px;
+                    margin: 15px 0px;
+                    border-radius: 10px;
+                     transition-timing-function: ease-in-out;
+                    transition: 1s;
+                    -webkit-transition: 1s;
+                     &:hover{
+                        background-color: lighten($main-green, 20%);
+                            h3{
+                                -webkit-transition: 1s; /* Safari */
+                                transition: 1s;
+                                opacity: 0.9;
+                            }
+                        }
+                    h3{
+                        opacity: 0.0;
+                        font-weight: bold;
+                        font-size: 30px;
+                    }
+                     img{
+                        width: 100px;
+                        height: 100px;
                     }
                 }
             }
-            #draw{
-                background-color: $orange;
-            }
-            #gamepad{
-                background-color: $facebook;
-            }
-            #face{
-                background-color: $yellow;
-            }
-            #people{
-                background-color: $main-green;
-            }
-            #note{
-                -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.75);
-                 background-color: $facebook;
-            }
-            #batery{
-                 background-color: $yellow;
-                 -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-            }
-            #tenedor{
-                 background-color: $main-green;
-                 -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-            }
-            #compu{
-                 background-color: $orange;
-                 -webkit-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-                -moz-box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-                box-shadow: 21px 17px 28px 0px rgba(0,0,0,0.55);
-            }
-        }
-        #ability{
-            text-align: center;
-            .caja{
-                padding: 10px;
-                margin: 15px 0px;
-                border-radius: 10px;
-                 transition-timing-function: ease-in-out;
-                transition: 1s;
-                -webkit-transition: 1s;
-                 &:hover{
-                    background-color: lighten($main-green, 20%);
+            #galleries{
+                .caja{
+                    margin: 10px 0px;
+                    border: 5px solid transparent;
+                    h3{
+                        text-align: center;
+                        opacity: 0.0;
+                        font-weight: bolder;
+                        font-size: 30px;
+                    }
+                    &:hover{
+                        border: 5px solid $main-green;
                         h3{
-                            -webkit-transition: 1s; /* Safari */
                             transition: 1s;
+                            -webkit-transition: 1s;
                             opacity: 0.9;
                         }
                     }
-                h3{
-                    opacity: 0.0;
-                    font-weight: bold;
-                    font-size: 30px;
-                }
-                 img{
-                    width: 100px;
-                    height: 100px;
                 }
             }
-        }
-        #galleries{
-            .caja{
-                margin: 10px 0px;
-                border: 5px solid transparent;
-                h3{
+            #contact{
+                text-align: center;
+                h2{
                     text-align: center;
-                    opacity: 0.0;
-                    font-weight: bolder;
                     font-size: 30px;
+                    font-family: quicksand;
+                    padding: 10px;
                 }
-                &:hover{
-                    border: 5px solid $main-green;
-                    h3{
-                        opacity: 0.9;
+                a{
+                    .caja{
+                        width: 100%;
+                        height: 140px;
+                        text-align: center;
+                        padding: 20px 10px;
+                        -webkit-border-radius: 50%; 
+                        -moz-border-radius: 50%;
+                        border-radius: 50%; 
+                        -webkit-transition:1s; /* Safari */
+                        transition: 1s;
+                        margin: 30px 0px;
+                        i{
+                            font-size: 80px;
+                            color: white;
+                            h6{
+                                font-size: 0px;
+                                opacity: 0;
+                            }
+                        }
+                        &:hover{
+                            i{
+                                transition: 1s;
+                                -webkit-transition: 1s;
+                                font-size: 50px;
+                                h6{
+                                    opacity: 0.9;
+                                    transition: 1s;
+                                    -webkit-transition: 1s;
+                                    font-size: 20px;
+                                    font-family: quicksand;
+                                }
+                            }
+                        }
+                    }
+                    .facebook{
+                        background-color: $facebook;
+                        &:hover{
+                             background-color: darken($facebook, 20%);
+                        }
+                    }
+                    .twitter{
+                        background-color: $twitter;
+                        &:hover{
+                             background-color: darken($twitter, 20%);
+                        }
+                    }
+                    .github{
+                        background-color: $github;
+                        &:hover{
+                             background-color: darken($github, 20%);
+                        }
+                    }
+                    .gitlab{
+                        background-color: $gitlab;
+                        &:hover{
+                             background-color: darken($gitlab, 20%);
+                        }
+                    }
+                    .gmail{
+                        background-color: $gmail;
+                        &:hover{
+                             background-color: darken($gmail, 20%);
+                        }
                     }
                 }
-            }
-        }
-        #contact{
-            text-align: center;
-            h2{
-                text-align: center;
-                font-size: 30px;
-                font-family: quicksand;
-                padding: 10px;
-            }
-            a{
-                .caja{
-                    width: 100%;
+            .cuadrado{
+                    max-width: 30%;
                     height: 140px;
+                    background-color: $main-green;
                     text-align: center;
                     padding: 20px 10px;
-                    -webkit-border-radius: 50%; 
-                    -moz-border-radius: 50%;
-                    border-radius: 50%; 
+                    -webkit-border-radius: 10%; 
+                    -moz-border-radius: 10%;
+                    border-radius: 10px; 
                     -webkit-transition:1s; /* Safari */
                     transition: 1s;
-                    margin: 30px 0px;
+                    margin: 30px 0px 30px 35%;
+                    i{
+                        font-size: 80px;
+                        color: white;
+                        h6{
+                            font-size: 1px;
+                            opacity: 0;
+                        }
+                    }
+                    &:hover{
+                        background-color: darken($main-green, 10%);
+                        i{
+                            transition: 1s;
+                            -webkit-transition: 1s;
+                            font-size: 50px;
+                            h6{
+                                opacity: 0.9;
+                                transition: 1s;
+                                -webkit-transition: 1s;
+                                font-size: 20px;
+                                font-family: quicksand;
+                            }
+                        }
+                    }
+                }
+                .cubo{
+                    max-width: 80%;
+                    height: 140px;
+                    background-color: $main-green;
+                    text-align: center;
+                    padding: 20px 10px;
+                    -webkit-border-radius: 10%; 
+                    -moz-border-radius: 10%;
+                    border-radius: 10px; 
+                    -webkit-transition:1s; /* Safari */
+                    transition: 1s;
+                    margin: 30px 0px 30px 10%;
                     i{
                         font-size: 50px;
                         color: white;
@@ -360,6 +361,7 @@ body{
                         }
                     }
                     &:hover{
+                        background-color: darken($main-green, 10%);
                         i{
                             h6{
                                 opacity: 0.9;
@@ -371,117 +373,7 @@ body{
                         }
                     }
                 }
-                .facebook{
-                    background-color: $facebook;
-                    &:hover{
-                         background-color: darken($facebook, 20%);
-                    }
-                }
-                .twitter{
-                    background-color: $twitter;
-                    &:hover{
-                         background-color: darken($twitter, 20%);
-                    }
-                }
-                .github{
-                    background-color: $github;
-                    &:hover{
-                         background-color: darken($github, 20%);
-                    }
-                }
-                .gitlab{
-                    background-color: $gitlab;
-                    &:hover{
-                         background-color: darken($gitlab, 20%);
-                    }
-                }
-                .gmail{
-                    background-color: $gmail;
-                    &:hover{
-                         background-color: darken($gmail, 20%);
-                    }
-                }
-            }
-        .cuadrado{
-                max-width: 30%;
-                height: 140px;
-                background-color: $main-green;
-                text-align: center;
-                padding: 20px 10px;
-                -webkit-border-radius: 10%; 
-                -moz-border-radius: 10%;
-                border-radius: 10px; 
-                -webkit-transition:1s; /* Safari */
-                transition: 1s;
-                margin: 30px 0px 30px 35%;
-                i{
-                    font-size: 50px;
-                    color: white;
-                    h6{
-                        opacity: 0;
-                    }
-                }
-                &:hover{
-                    background-color: darken($main-green, 10%);
-                    i{
-                        h6{
-                            opacity: 0.9;
-                            transition: 1s;
-                            -webkit-transition: 1s;
-                            font-size: 20px;
-                            font-family: quicksand;
-                        }
-                    }
-                }
-            }
-            .cubo{
-                max-width: 80%;
-                height: 140px;
-                background-color: $main-green;
-                text-align: center;
-                padding: 20px 10px;
-                -webkit-border-radius: 10%; 
-                -moz-border-radius: 10%;
-                border-radius: 10px; 
-                -webkit-transition:1s; /* Safari */
-                transition: 1s;
-                margin: 30px 0px 30px 10%;
-                i{
-                    font-size: 50px;
-                    color: white;
-                    h6{
-                        opacity: 0;
-                    }
-                }
-                &:hover{
-                    background-color: darken($main-green, 10%);
-                    i{
-                        h6{
-                            opacity: 0.9;
-                            transition: 1s;
-                            -webkit-transition: 1s;
-                            font-size: 20px;
-                            font-family: quicksand;
-                        }
-                    }
-                }
             }
         }
-    }
-}
-footer{
-    text-align: center;
-    background-color: darken($darken-green,10%);
-    padding: 2% 0;
-    color: white;
-    h3{
-        font-family: quicksand;
-        font-size: 20px;
-        display: inline-block;
-        padding: 10px;
-    }
-    img{
-        height: 70px;
-        width: 60%;
     }
 }
