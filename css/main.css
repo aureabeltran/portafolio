@@ -376,7 +376,7 @@ img {
     .fondo-1::before {
       background-color: rgba(0, 0, 0, 0.57); }
     .fondo-1 a .icon-div {
-      margin-left: 35% !important; }
+      margin: 0 auto !important; }
 
   #content .nav-tabs li {
     float: center; }
@@ -401,7 +401,7 @@ img {
     .fondo-1::before {
       background-color: rgba(0, 0, 0, 0.57); }
     .fondo-1 a .icon-div {
-      margin-left: 35% !important; }
+      margin: 0 auto; }
 
   #content .nav-tabs li {
     float: center; }
@@ -425,8 +425,7 @@ img {
     .fondo-1::before {
       background-color: rgba(0, 0, 0, 0.57); }
     .fondo-1 a .icon-div {
-      text-align: center;
-      margin-left: 40% !important; } }
+      margin: 0 auto; } }
 .fondo {
   background-size: cover; }
 
@@ -463,11 +462,11 @@ img {
     font-size: 70px;
     font-weight: bold; }
   .fondo-1 a .icon-div {
-    margin-top: 120px;
+    margin-top: 120px !important;
+    margin: 0 auto;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
-    margin-left: 45%;
     height: 120px;
     width: 120px;
     border: 7px solid white;
