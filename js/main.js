@@ -45,6 +45,7 @@ $("#bici").on("click", function(){
 	cleta.toggleClass("_hide");
 	$('.contenedor').not(cleta).addClass('_hide');
 })
+//esto es para el reajuste de pantalla
 
  $(window).resize(function(){
 

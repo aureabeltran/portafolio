@@ -238,6 +238,7 @@
                     font-size: 30px;
                     font-family: quicksand;
                     padding: 10px;
+                    margin-bottom: 20px;
                 }
                 a{
                     .caja{
@@ -250,7 +251,7 @@
                         border-radius: 50%; 
                         -webkit-transition:1s; /* Safari */
                         transition: 1s;
-                        margin: 30px 0px;
+                        margin: 0 auto;
                         i{
                             font-size: 80px;
                             color: white;
@@ -316,7 +317,7 @@
                     border-radius: 10px; 
                     -webkit-transition:1s; /* Safari */
                     transition: 1s;
-                    margin: 30px 0px 30px 35%;
+                    margin: 0 auto;
                     i{
                         font-size: 80px;
                         color: white;
@@ -352,7 +353,7 @@
                     border-radius: 10px; 
                     -webkit-transition:1s; /* Safari */
                     transition: 1s;
-                    margin: 30px 0px 30px 10%;
+                    margin: 0 auto;
                     i{
                         font-size: 50px;
                         color: white;
