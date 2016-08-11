@@ -50,7 +50,7 @@ $("#bici").on("click", function(){
 
    if ($(window).width() <= 420) {  
 
-          $('.contenedor').css({'width' : '250px' , 'left' : '0%' , 'height' : '200px'});
+          $('.contenedor').css({'width' : '250px' , 'left' : '0%' , 'top' : '10%' , 'height' : '200px'});
 
    }     
 
