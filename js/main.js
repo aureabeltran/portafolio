@@ -48,9 +48,9 @@ $("#bici").on("click", function(){
 
  $(window).resize(function(){
 
-   if ($(window).width() =< 420) {  
+   if ($(window).width() <= 420) {  
 
-          $('.contenedor').css({'width' : '250px' , 'left' : '0%' , 'height' : '200'});
+          $('.contenedor').css({'width' : '250px' , 'left' : '0%' , 'height' : '200px'});
 
    }     
 
